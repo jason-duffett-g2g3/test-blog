@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+</head>
+
+<body>
+    <header>
+      <div class="container">
+        <h1>Test-blog</h1>
+        <h2>Testing to see if GitHub Pages would be a useful way to manage Thought Leadership content</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/jason-duffett-g2g3/test-blog/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/jason-duffett-g2g3/test-blog/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/jason-duffett-g2g3/test-blog" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+     	{{ content }}
+    </div>    
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+</body>
